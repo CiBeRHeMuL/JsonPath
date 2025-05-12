@@ -1,0 +1,30 @@
+{
+  "name": "andrew-gos/jsonpath",
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "AndrewGos\\JsonPath\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AndrewGos\\JsonPath\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Andrey Gostev",
+      "email": "Gostev71@outlook.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.2",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5.17"
+  }
+}
