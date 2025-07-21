@@ -804,6 +804,7 @@ class Parser
         $tokens->consumeTokenValue(Lexer::TOKEN_OTHER, 'n');
         $tokens->consumeTokenValue(Lexer::TOKEN_OTHER, 'u');
         $tokens->consumeTokenValue(Lexer::TOKEN_OTHER, 'l');
+        $tokens->consumeTokenValue(Lexer::TOKEN_OTHER, 'l');
         return null;
     }
 
