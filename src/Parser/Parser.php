@@ -773,7 +773,10 @@ class Parser
                         return new LiteralNode($literal);
                     } catch (ParserException $e) {
                         $tokens->rollback();
-                        return $this->parseNull($tokens);
+                        $tokens->pushSavePoint();
+                        $literal = $this->parseNull($tokens);
+                        $tokens->commit();
+                        return new LiteralNode($literal);
                     }
                 }
             }
